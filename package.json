@@ -1,0 +1,20 @@
+{
+  "name": "reproduction",
+  "version": "1.0.0",
+  "description": "Object oriented world of interactive related things.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/reproduction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/reproduction/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/reproduction#readme"
+}
