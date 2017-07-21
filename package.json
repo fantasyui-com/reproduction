@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/fantasyui-com/reproduction/issues"
   },
-  "homepage": "https://github.com/fantasyui-com/reproduction#readme"
+  "homepage": "https://github.com/fantasyui-com/reproduction#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "oneof": "^1.0.1"
+  }
 }
