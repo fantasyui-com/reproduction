@@ -1,6 +1,6 @@
 {
   "name": "reproduction",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Object oriented world of interactive related things.",
   "main": "index.js",
   "scripts": {
