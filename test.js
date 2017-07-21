@@ -1,53 +1,7 @@
-const Reproduction = require('./index.js');
+const { Reproduction, Entity, Container, Thing } = require('./index.js');
+
 
 const universe = new Reproduction("Ball World");
-
-const oneof = require('oneof');
-const intersection = require('lodash/intersection');
-
-var baseMixin = Base => class extends Base {
-  boo() { }
-};
-
-var nameMixin = Base => class extends Base {
-  names(list){
-    this.nameList = list;
-  }
-  name(tags){
-    let best = oneof(this.nameList[0].names);
-    if(!tags) return best;
-    this.nameList.forEach(item=>{
-      if(intersection(tags,item.tags).length == tags.length){
-        best = oneof(item.names);
-      }
-    });
-    return best;
-  }
-};
-
-
-
-class Energy {}
-class Entity extends nameMixin(baseMixin(Energy)) {
-  constructor(){
-    super();
-    this.entity = true
-  }
-}
-
-class Container extends nameMixin(baseMixin(Energy)) {
-  constructor(){
-    super();
-    this.container = true
-  }
-}
-
-class Thing extends nameMixin(baseMixin(Energy)) {
-  constructor(){
-    super();
-    this.thing = true
-  }
-}
 
 
 const alice = new Entity();

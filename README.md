@@ -43,3 +43,5 @@ I wanted to find the minimal platform but with good structure and fair constrain
 5. Accessing items by ID, shows great promise; fine and easy to remember constraints
 6. Using hand coded id for all items great success.
 7. Adding Mixins for secondary concerns (Language/Devices)
+
+## TODO
