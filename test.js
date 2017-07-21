@@ -24,18 +24,25 @@ box.names([
 
 
 
-const examiner = function({object}){
+const examinerExpression = function({object}){
   return `The ${object.name(['the'])} is pretty neat`;
 }
 
 
-const locator = function({object, location}){
+
+const locatorExpression = function({object, location}){
   if(location.entity){
     return `Oh, you mean that ${object.name(['that'])}?, that ${object.name(['that'])} is in ${location.name(['possessive'])} hands now.`
   }
   if(location.container){
     return `The ${object.name(['the']) } is in the ${location.name(['the'])  }`
   }
+}
+
+const locatorFabulousExpression = function({object, location}){
+
+    return `The fabulous ${object.name(['the']) } is in the ${location.name(['the'])} again.`
+
 }
 
 
@@ -51,9 +58,9 @@ const locator = function({object, location}){
   .create('box', box)
 
   .insert('ball', 'box')
-  .examine('ball', locator)
+  .examine('ball', locatorFabulousExpression)
 
   .take('ball', 'box')
 
-  .examine('ball', examiner)
-  .examine('ball', locator);
+  .examine('ball', examinerExpression)
+  .examine('ball', locatorExpression);
