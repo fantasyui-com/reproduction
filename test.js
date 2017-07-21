@@ -1,8 +1,6 @@
 const { Reproduction, Entity, Container, Thing } = require('./index.js');
 
-
 const universe = new Reproduction("Ball World");
-
 
 const alice = new Entity();
 const ball = new Thing();
@@ -26,12 +24,12 @@ box.names([
 
 
 
-const examiner = function(object){
+const examiner = function({object}){
   return `The ${object.name(['the'])} is pretty neat`;
 }
 
 
-const locator = function(object, location){
+const locator = function({object, location}){
   if(location.entity){
     return `Oh, you mean that ${object.name(['that'])}?, that ${object.name(['that'])} is in ${location.name(['possessive'])} hands now.`
   }
@@ -53,9 +51,9 @@ const locator = function(object, location){
   .create('box', box)
 
   .insert('ball', 'box')
-  .whereis('ball', locator)
+  .examine('ball', locator)
 
   .take('ball', 'box')
 
   .examine('ball', examiner)
-  .whereis('ball', locator);
+  .examine('ball', locator);

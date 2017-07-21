@@ -71,16 +71,13 @@ class Reproduction {
 
   // Textual
 
+
+
   examine(source, template){
     const object = this.id(source);
-    console.log( template(object) );
-    return this;
-  }
-
-  whereis(source, template){
-    const object = this.id(source);
     const location = this.id( object.pid );
-    console.log( template(object, location, ) );
+
+    console.log( template({ object, location }) );
     return this;
   }
 
