@@ -6,7 +6,6 @@ const alice = new Entity();
 const ball = new Thing();
 const box = new Container();
 
-
 alice.names([
   {names:["Alice"], tags:['name']},
   {names:["Alice's"], tags:['possessive']}
@@ -22,12 +21,9 @@ box.names([
   {names:["box's"], tags:['possessive']}
 ]);
 
-
-
 const examinerExpression = function({object}){
   return `The ${object.name(['the'])} is pretty neat`;
 }
-
 
 
 const locatorExpression = function({object, location}){
@@ -40,14 +36,8 @@ const locatorExpression = function({object, location}){
 }
 
 const locatorFabulousExpression = function({object, location}){
-
     return `The fabulous ${object.name(['the']) } is in the ${location.name(['the'])} again.`
-
 }
-
-
-
-
 
 
   universe

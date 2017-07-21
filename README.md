@@ -45,3 +45,8 @@ I wanted to find the minimal platform but with good structure and fair constrain
 7. Adding Mixins for secondary concerns (Language/Devices)
 
 ## TODO
+
+Expressing language/prose via computer generated worlds is tough, in terms of code readability.
+I believe improving on the String Templates and Expression Arrays (see test.js) will only harm the program.
+
+A.
