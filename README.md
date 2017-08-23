@@ -1,5 +1,6 @@
 # reproduction
-Universe of interactive things
+
+Universe of interactive things focused on english-like descriptions of items within.
 
 Preview
 
