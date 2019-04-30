@@ -20,6 +20,6 @@
   "dependencies": {
     "express": "^4.15.3",
     "lodash": "^4.17.4",
-    "oneof": "^1.0.1"
+    "oneof": "^1.1.0"
   }
 }
