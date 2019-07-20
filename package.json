@@ -19,7 +19,7 @@
   "homepage": "https://github.com/fantasyui-com/reproduction#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.15",
     "oneof": "^1.1.0"
   }
 }
